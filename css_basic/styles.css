@@ -1,9 +1,10 @@
 /* Make the body a flex container */
 body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color */
     margin: 0;
+    padding: 0;
 }
 
 /* Make the main tag a flex container */
@@ -41,3 +42,12 @@ footer {
     padding: 15px;
     text-align: center;
 }
+
+/* Style for the logo */
+.logo {
+    font-size: 2rem; /* Makes the logo bigger */
+    margin-right: 20px; /* Adds space between the logo and the rest of the nav links */
+    vertical-align: middle; /* Aligns it vertically in the center */
+}
+
+
