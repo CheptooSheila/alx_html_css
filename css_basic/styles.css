@@ -1,4 +1,4 @@
-/* Make the body a flex container */
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4; /* Light grey background */
@@ -7,47 +7,69 @@ body {
     padding: 0;
 }
 
-/* Make the main tag a flex container */
-main {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
-}
-
-/* Ensure header and footer take only necessary space */
-header, footer {
-    background-color: #f1f1f1;
-    padding: 10px;
+/* Style the header */
+header {
+    background-color: #222; /* Dark background for header */
+    color: white; /* White text color */
+    padding: 10px 0;
     text-align: center;
 }
 
-/* Style the article and aside */
-article {
-    flex: 2;
-    padding: 20px;
-    overflow-y: auto;
-    background-color: #e0f7fa;
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-aside {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    background-color: #f9fbe7;
+header ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Footer styling */
+header ul li a {
+    color: white; /* Make the nav links white */
+    text-decoration: none; /* Remove underline */
+}
+
+header ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Style the footer */
 footer {
-    background-color: #e0e0e0;
-    padding: 15px;
+    background-color: #222; /* Dark background for footer */
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
-/* Style for the logo */
-.logo {
-    font-size: 2rem; /* Makes the logo bigger */
-    margin-right: 20px; /* Adds space between the logo and the rest of the nav links */
-    vertical-align: middle; /* Aligns it vertically in the center */
+/* Article styling (customized inside the <article> tag) */
+article h1, article h2, article h3 {
+    color: #0073e6; /* Blue color for headings */
 }
 
+article p {
+    line-height: 1.6;
+}
 
+article table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+article table th, article table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+article table th {
+    background-color: #0073e6;
+    color: white;
+}
+
+/* Style the aside */
+aside {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 2px solid #ccc;
+}
